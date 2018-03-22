@@ -1,6 +1,7 @@
 const createPost = () => {
     const data = {
         name: document.querySelector('#name').value,
+        imageURL: document.querySelector('#imageURL').value,
         url: document.querySelector('#url').value,
         text: document.querySelector('#text').value
     }
@@ -15,6 +16,7 @@ const createPost = () => {
     }).then(function(data) {
         document.querySelector('#name').value = ''
         document.querySelector('#url').value = ''
+        document.querySelector('#imageURL').value = ''
         document.querySelector('#text').value = ''
         document.querySelector('.modal').classList.toggle('show')
         getPosts()

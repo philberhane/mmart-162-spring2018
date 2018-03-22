@@ -45,3 +45,13 @@ li, p {
 .right {
     float: right;
 }
+.red {
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 10%;
+}
+
+.red:hover {
+    text-decoration: underline;
+}
